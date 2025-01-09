@@ -28,14 +28,13 @@ const Header = () => {
   return (
     <div>
  <Navbar expand="lg" bg="dark" data-bs-theme="dark"  >
-      <Container fluid style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
+      <Container fluid style={{alignItems:"center",justifyContent:"center"}}>
         <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
        
-        <Navbar.Toggle aria-controls="navbarScroll" />
+      
           <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
-            navbarScroll
           >
      
           </Nav>
