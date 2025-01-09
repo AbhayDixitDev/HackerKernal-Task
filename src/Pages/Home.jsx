@@ -18,7 +18,7 @@ const Home = () => {
   }, [token]);
   return (
   <>
-  <Container fluid className="d-flex flex-wrap "  >
+  <Container style={{display:"flex",flexWrap:"wrap",padding:"0px"}}  >
   <Col lg={4} md={6} sm={12}> <AddProductForm/>  </Col>
   <Col lg={4} md={6} sm={12}> <DisplayProduct/>  </Col>
   <Col lg={4} md={6} sm={12}> <Search/>   </Col>
