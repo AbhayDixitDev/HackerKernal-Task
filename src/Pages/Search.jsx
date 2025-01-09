@@ -17,9 +17,6 @@ const Search = () => {
             <tr key={key.id}> 
                 <td>{key.name}</td>
                 <td>{key.price}</td>
-                <td>
-                    <ImCross className="delete-icon" />
-                </td>
             </tr>
         );
     });
@@ -47,7 +44,6 @@ const Search = () => {
                         <tr>
                             <th>Name</th>
                             <th>Price</th>
-                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
