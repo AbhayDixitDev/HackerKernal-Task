@@ -1,10 +1,16 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { ImCross } from "react-icons/im";
+import { Form } from 'react-bootstrap';
+import { useState } from 'react';
 import "../assets/stylesheets/Search.css";
+import { useDispatch } from 'react-redux';
+import { searchProduct } from '../Redux/productSlice';
 
 const Search = () => {
     const searchData = useSelector(state => state.product.search);
+    const [search, setSearch] = useState("")
+    const dispatch = useDispatch()  
 
     const ans = searchData.map((key) => {
         return (
@@ -18,9 +24,23 @@ const Search = () => {
         );
     });
 
+    const handleSearch=(e)=>{
+        setSearch(e)
+          dispatch(searchProduct(e))
+      }
+
     return (
-        <div className="container">
+        <div className="container3" >
             <h1>Search Products</h1>
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+              value={search}
+              onChange={(e)=>{handleSearch(e.target.value)}}
+              style={{width:"80%",margin:"20px"}}
+            />
             {searchData.length > 0 ? (
                 <table>
                     <thead>

@@ -27,16 +27,17 @@ const Header = () => {
     
   return (
     <div>
- <Navbar expand="lg" bg="dark" data-bs-theme="dark">
-      <Container fluid>
+ <Navbar expand="lg" bg="dark" data-bs-theme="dark"  >
+      <Container fluid style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
+        <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
+       
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
+     
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -50,9 +51,7 @@ const Header = () => {
             />
             <Button variant="danger" onClick={handleLogout} style={{width:"80px",height:"38px",fontSize:"15px"}}>Logout</Button>
 
-
           </Form>
-        </Navbar.Collapse>
       </Container>
     </Navbar>
         

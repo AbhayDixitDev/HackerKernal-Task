@@ -23,7 +23,7 @@ const AddProductForm = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container1">
       <h1>Add Product</h1>
       <Form className="form">
         <Form.Control

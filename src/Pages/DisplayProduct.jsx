@@ -9,7 +9,7 @@ const DisplayProduct = () => {
   const mydata = useSelector(state => state.product.products);
   // console.log(mydata.length);
   const dispatch = useDispatch();
-  
+
 
   const ans = mydata.map((key) => {
     return (
@@ -24,7 +24,7 @@ const DisplayProduct = () => {
   });
 
   return (
-    <div className="container">
+    <div className="container2">
       <h1>Display Product</h1>
       <table>
         <thead>

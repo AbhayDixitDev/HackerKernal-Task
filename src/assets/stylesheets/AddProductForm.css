@@ -1,13 +1,16 @@
-.container {
-    width: 400px;
-    margin-left: 50px;
-  }
+.container1 {
+  width: 425px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  min-height: 250px;
+}
   
   .form {
-    width: 400px;
+    width: 100%;
     border-radius: 10px;
     padding: 20px;
-    border: 1px solid black;
   }
   
   .form-control {

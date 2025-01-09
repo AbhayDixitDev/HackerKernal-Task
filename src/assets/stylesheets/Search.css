@@ -1,11 +1,12 @@
-.container {
-    width: 600px;
+.container3 {
+    width: 425px;
+  box-sizing: border-box;
     margin: 20px auto;
-    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 10px #000;
-}
+  min-height: 250px;
+
+  }
 
 h1 {
     text-align: center;
